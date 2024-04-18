@@ -98,6 +98,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="RR_8_AleksanderKarbowiak_454783_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="RR_8_AleksanderKarbowiak_454783_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+<script src="RR_8_AleksanderKarbowiak_454783_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="RR_8_AleksanderKarbowiak_454783_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 </head>
 
@@ -133,24 +136,75 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr>
 <section id="show-description" class="level2">
 <h2 class="anchored" data-anchor-id="show-description">Show description</h2>
-<p><strong><em>The Office</em></strong> is an American mockumentary sitcom television series that depicts the everyday work lives of office employees at the Scranton, Pennsylvania, branch of the fictional <strong><em>Dunder Mifflin Paper Company</em></strong>. It aired on <strong><em>NBC</em></strong> from March 24, 2005, to May 16, 2013, with a total of nine seasons consisting of 201 episodes. American version is based on the 2001–2003 <strong><em>BBC</em></strong> series of the same name. Like its British counterpart, the series was filmed in a single-camera setup without a studio audience or a, to mirror the look of an actual documentary.</p>
+<p><strong><em>The Office</em></strong> is an American mockumentary sitcom television series that depicts the everyday work lives of office employees at the <strong><em>Scranton</em></strong>, <strong><em>Pennsylvania</em></strong>, branch of the fictional <strong><em>Dunder Mifflin Paper Company</em></strong>. It aired on <strong><em>NBC</em></strong> from March 24, 2005, to May 16, 2013, with a total of nine seasons consisting of 201 episodes. American version is based on the 2001–2003 <strong><em>BBC</em></strong> series of the same name. Like its British counterpart, the series was filmed in a single-camera setup without a studio audience or a, to mirror the look of an actual documentary.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.google.com/search?sca_esv=6b1c5e95a3d0b06b&amp;rlz=1C1GCEB_enPL961PL962&amp;q=the+office&amp;uds=AMwkrPth2lwGf-lsu6J4oEsDB3N57nv8C_6kM3GXelCSuJJYTDzI_9U-OrT0-fhjmxLR2T3Wbbz66HRSaZs31ygG9zKaKDy5sBaxWWDrJtp6L4_8zi1VfHKg1Df2AiGsl-ASZcB97ydFBAWRG8nnY6sawasin1vI0bS72KtVIvh5lkHb9thIR6eAKlhUWdBX-KEdydEIwo2T5BFuVjkhPLYhVas219__5-t2OzFooLTS8k01nnmTiTLbOHjluqr1UR-fuQadGyKzRyWx0WLos1C5SVfGYV6MgfpTPZwFhnukIbt9z8TxrYP7QEZlq5bHT7rOrdjjNciqoiuUnVDkg6WGRlz_pWrHkQ&amp;udm=2&amp;prmd=ivnbz&amp;sa=X&amp;ved=2ahUKEwjguIa1wcyFAxU1RvEDHcj9BP8QtKgLegQICxAB&amp;biw=1536&amp;bih=703&amp;dpr=1.25#vhid=okH8ui5F4YWQOM&amp;vssid=mosaic"><img src="The_OFFICE_CREW.jpg" class="img-fluid figure-img" alt="The Office cast"></a></p>
+<p></p><figcaption class="figure-caption">The Office cast</figcaption><p></p>
+</figure>
+</div>
 </section>
-<section id="running-code" class="level2">
-<h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<section id="ratings-of-the-office" class="level2">
+<h2 class="anchored" data-anchor-id="ratings-of-the-office">Ratings of The Office</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+
 </div>
-</div>
-<p>You can add options to executable code like this</p>
+<p>Table below presents summary statistics of <strong><em>Rotten Tomatoes</em></strong> critical responses for every season of <strong><em>The Office</em></strong>. The data was obtained from <a href="https://en.wikipedia.org/wiki/The_Office_(American_TV_series)#cite_note-148"><em>Wikipedia - The Office</em></a><em>.</em></p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st</span>(data_office)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>Summary Statistics</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Variable </th>
+   <th style="text-align:left;"> N </th>
+   <th style="text-align:left;"> Mean </th>
+   <th style="text-align:left;"> Std. Dev. </th>
+   <th style="text-align:left;"> Min </th>
+   <th style="text-align:left;"> Pctl. 25 </th>
+   <th style="text-align:left;"> Pctl. 75 </th>
+   <th style="text-align:left;"> Max </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Season </td>
+   <td style="text-align:left;"> 9 </td>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> 2.7 </td>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> 9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Num_of_reviews </td>
+   <td style="text-align:left;"> 9 </td>
+   <td style="text-align:left;"> 22 </td>
+   <td style="text-align:left;"> 11 </td>
+   <td style="text-align:left;"> 12 </td>
+   <td style="text-align:left;"> 13 </td>
+   <td style="text-align:left;"> 25 </td>
+   <td style="text-align:left;"> 42 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Rating </td>
+   <td style="text-align:left;"> 9 </td>
+   <td style="text-align:left;"> 7.7 </td>
+   <td style="text-align:left;"> 0.69 </td>
+   <td style="text-align:left;"> 6.3 </td>
+   <td style="text-align:left;"> 7.3 </td>
+   <td style="text-align:left;"> 8.3 </td>
+   <td style="text-align:left;"> 8.4 </td>
+  </tr>
+</tbody>
+</table>
+
 </div>
 </div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+<p>The series had nine seasons. The average rating of the seasons was 7.7/10. The best season was rated 8.4 out of 10, and the worst season was rated 6.3 out of 10. On average, a season of <strong><em>The Office</em></strong> series got 22 professional reviews.</p>
 </section>
 </div>
 
