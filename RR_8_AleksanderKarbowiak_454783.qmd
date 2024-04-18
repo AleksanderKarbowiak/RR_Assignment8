@@ -23,6 +23,7 @@ suppressPackageStartupMessages({
 suppressWarnings({
 library(readxl)
 library(vtable)
+library(ggplot2)
 data_office <- read_excel("theOffice_Ratings.xlsx")
 })
 })
@@ -35,4 +36,14 @@ st(data_office)
 ```
 
 The series had nine seasons. The average rating of the seasons was 7.7/10. The best season was rated 8.4 out of 10, and the worst season was rated 6.3 out of 10. On average, a season of ***The Office*** series got 22 professional reviews.
+
+## Rating over seasons
+
+```{r}
+ggplot(data=data_office, aes(x=Season, y=Rating)) +
+  geom_line(color="red") +  
+  geom_label(label = data_office$Rating, vjust=0.9) +
+  geom_point() + scale_x_continuous(breaks = 1:9)
+
+```
 :::
