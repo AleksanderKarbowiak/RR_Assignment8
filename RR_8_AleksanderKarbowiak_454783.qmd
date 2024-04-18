@@ -5,9 +5,15 @@ format: html
 editor: visual
 ---
 
-## Quarto
+::: {style="text-align: justify"}
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+------------------------------------------------------------------------
+
+## Show description
+
+***The Office*** is an American mockumentary sitcom television series that depicts the everyday work lives of office employees at the ***Scranton***, ***Pennsylvania***, branch of the fictional ***Dunder Mifflin Paper Company***. It aired on ***NBC*** from March 24, 2005, to May 16, 2013, with a total of nine seasons consisting of 201 episodes. American version is based on the 2001--2003 ***BBC*** series of the same name. Like its British counterpart, the series was filmed in a single-camera setup without a studio audience or a, to mirror the look of an actual documentary.
+
+[![The Office cast](The_OFFICE_CREW.jpg){fig-alt="The Office cast" fig-align="center"}](https://www.google.com/search?sca_esv=6b1c5e95a3d0b06b&rlz=1C1GCEB_enPL961PL962&q=the+office&uds=AMwkrPth2lwGf-lsu6J4oEsDB3N57nv8C_6kM3GXelCSuJJYTDzI_9U-OrT0-fhjmxLR2T3Wbbz66HRSaZs31ygG9zKaKDy5sBaxWWDrJtp6L4_8zi1VfHKg1Df2AiGsl-ASZcB97ydFBAWRG8nnY6sawasin1vI0bS72KtVIvh5lkHb9thIR6eAKlhUWdBX-KEdydEIwo2T5BFuVjkhPLYhVas219__5-t2OzFooLTS8k01nnmTiTLbOHjluqr1UR-fuQadGyKzRyWx0WLos1C5SVfGYV6MgfpTPZwFhnukIbt9z8TxrYP7QEZlq5bHT7rOrdjjNciqoiuUnVDkg6WGRlz_pWrHkQ&udm=2&prmd=ivnbz&sa=X&ved=2ahUKEwjguIa1wcyFAxU1RvEDHcj9BP8QtKgLegQICxAB&biw=1536&bih=703&dpr=1.25#vhid=okH8ui5F4YWQOM&vssid=mosaic)
 
 ## Running Code
 
@@ -25,3 +31,4 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+:::
