@@ -24,6 +24,7 @@ suppressWarnings({
 library(readxl)
 library(vtable)
 library(ggplot2)
+library(data.table)
 data_office <- read_excel("theOffice_Ratings.xlsx")
 })
 })
@@ -45,5 +46,16 @@ ggplot(data=data_office, aes(x=Season, y=Rating)) +
   geom_label(label = data_office$Rating, vjust=0.9) +
   geom_point() + scale_x_continuous(breaks = 1:9)
 
+```
+
+## Change of ratings season-to-season
+
+```{r}
+data_office$RatingChange <- ifelse(data_office$Season==1,0,round(data_office$Rating - shift(data_office$Rating,1,0),2))
+
+ggplot(data=data_office, aes(x=Season, y=RatingChange)) +
+  geom_line(color="green") +  
+  geom_label(label = data_office$RatingChange, vjust=0.9) +
+  geom_point() + scale_x_continuous(breaks = 1:9)
 ```
 :::
