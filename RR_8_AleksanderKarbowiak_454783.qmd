@@ -58,4 +58,6 @@ ggplot(data=data_office, aes(x=Season, y=RatingChange)) +
   geom_label(label = data_office$RatingChange, vjust=0.9) +
   geom_point() + scale_x_continuous(breaks = 1:9)
 ```
+
+As we can observe, the change of rating was fluctuating more and more over time. Second season was better than first by 0.69 points. We can say that third one was equally good as second. We can see the biggest downgrade between season 7 and 8 - rating of season 8 decreased by 1.51 in comparison to season 7.
 :::

@@ -218,6 +218,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </section>
+<section id="change-of-ratings-season-to-season" class="level2">
+<h2 class="anchored" data-anchor-id="change-of-ratings-season-to-season">Change of ratings season-to-season</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data_office<span class="sc">$</span>RatingChange <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(data_office<span class="sc">$</span>Season<span class="sc">==</span><span class="dv">1</span>,<span class="dv">0</span>,<span class="fu">round</span>(data_office<span class="sc">$</span>Rating <span class="sc">-</span> <span class="fu">shift</span>(data_office<span class="sc">$</span>Rating,<span class="dv">1</span>,<span class="dv">0</span>),<span class="dv">2</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>data_office, <span class="fu">aes</span>(<span class="at">x=</span>Season, <span class="at">y=</span>RatingChange)) <span class="sc">+</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">color=</span><span class="st">"green"</span>) <span class="sc">+</span>  </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="at">label =</span> data_office<span class="sc">$</span>RatingChange, <span class="at">vjust=</span><span class="fl">0.9</span>) <span class="sc">+</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="RR_8_AleksanderKarbowiak_454783_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>As we can observe, the change of rating was fluctuating more and more over time. Second season was better than first by 0.69 points. We can say that third one was equally good as second. We can see the biggest downgrade between season 7 and 8 - rating of season 8 decreased by 1.51 in comparison to season 7.</p>
+</section>
 </div>
 
 </main>
